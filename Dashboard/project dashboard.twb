@@ -1,0 +1,1618 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='projectdashboard_17447823959870' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='final_trade_etf_data' inline='true' name='federated.1dsyjvf17tygab199rbjn0vc6713' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_trade_etf_data' name='textscan.1krb1tw1qg0qej1d5xwrb0o6t3br'>
+            <connection class='textscan' directory='C:/Users/Shreya Kolte/OneDrive/Desktop/global_econ_intelligence_project/Data/Clean' filename='final_trade_etf_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1krb1tw1qg0qej1d5xwrb0o6t3br' name='final_trade_etf_data.csv' table='[final_trade_etf_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='date' name='Month' ordinal='1' />
+            <column datatype='real' name='Import_Value' ordinal='2' />
+            <column datatype='real' name='Export_Value' ordinal='3' />
+            <column datatype='real' name='Trade_Balance' ordinal='4' />
+            <column datatype='real' name='XLK_Avg_Close' ordinal='5' />
+            <column datatype='real' name='Trade_Balance_%_Change' ordinal='6' />
+            <column datatype='real' name='XLK_Change_%' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Import_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Import_Value]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>Import_Value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Export_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Export_Value]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>Export_Value</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trade_Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Trade_Balance]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>Trade_Balance</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>XLK_Avg_Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[XLK_Avg_Close]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>XLK_Avg_Close</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trade_Balance_%_Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Trade_Balance_%_Change]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>Trade_Balance_%_Change</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>XLK_Change_%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[XLK_Change_%]</local-name>
+            <parent-name>[final_trade_etf_data.csv]</parent-name>
+            <remote-alias>XLK_Change_%</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Trade Balance (Millions)' datatype='real' name='[Calculation_197032552111128576]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Trade_Balance] / 1000000' />
+      </column>
+      <column caption='Total ETF Growth %' datatype='real' name='[Calculation_197032552124039169]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[XLK_Change_%] * 100' />
+      </column>
+      <column caption='ETF Growth Polarity' datatype='string' name='[Calculation_197032552124821506]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF SUM([XLK_Change_%]) &gt; 0 THEN &quot;Positive&quot;&#13;&#10;ELSE &quot;Negative&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Trade Balance in Millions' datatype='real' name='[Calculation_197032552138932228]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Trade_Balance] / 1000000' />
+      </column>
+      <column caption='Deficit Month Flag' datatype='integer' name='[Calculation_197032552142487557]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Trade_Balance] &lt; 0 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Total ETF Growth % (Fixed)' datatype='real' name='[Calculation_197032552145215494]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(&#13;&#10;    { FIXED : MAX([XLK_Avg_Close]) } - { FIXED : MIN([XLK_Avg_Close]) }&#13;&#10;) / { FIXED : MIN([XLK_Avg_Close]) } * 100' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Export Value' datatype='real' name='[Export_Value]' role='measure' type='quantitative' />
+      <column caption='Import Value' datatype='real' name='[Import_Value]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Trade Balance' datatype='real' name='[Trade_Balance]' role='dimension' type='ordinal' />
+      <column caption='Trade Balance % Change' datatype='real' name='[Trade_Balance_%_Change]' role='measure' type='quantitative' />
+      <column caption='XLK Avg Close' datatype='real' name='[XLK_Avg_Close]' role='measure' type='quantitative' />
+      <column caption='XLK Change %' datatype='real' name='[XLK_Change_%]' role='measure' type='quantitative' />
+      <column caption='final_trade_etf_data.csv' datatype='table' name='[__tableau_internal_object_id__].[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_197032552124821506]' derivation='User' name='[usr:Calculation_197032552124821506:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/SHREYA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0ms10ez1rg5dui19v2dmj03rrl8v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/15/2025 10:06:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Import_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Import_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Import_Value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Export_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Export_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Export_Value</remote-alias>
+              <ordinal>3</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trade_Balance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Trade_Balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trade_Balance</remote-alias>
+              <ordinal>4</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>XLK_Avg_Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[XLK_Avg_Close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>XLK_Avg_Close</remote-alias>
+              <ordinal>5</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trade_Balance_%_Change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Trade_Balance_%_Change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trade_Balance_%_Change</remote-alias>
+              <ordinal>6</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>XLK_Change_%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[XLK_Change_%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>XLK_Change_%</remote-alias>
+              <ordinal>7</ordinal>
+              <family>final_trade_etf_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_197032552124821506:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='final_trade_etf_data.csv' id='final_trade_etf_data.csv_DEF3637AA218494D92B4CEA75D7BD137'>
+            <properties context=''>
+              <relation connection='textscan.1krb1tw1qg0qej1d5xwrb0o6t3br' name='final_trade_etf_data.csv' table='[final_trade_etf_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='date' name='Month' ordinal='1' />
+                  <column datatype='real' name='Import_Value' ordinal='2' />
+                  <column datatype='real' name='Export_Value' ordinal='3' />
+                  <column datatype='real' name='Trade_Balance' ordinal='4' />
+                  <column datatype='real' name='XLK_Avg_Close' ordinal='5' />
+                  <column datatype='real' name='Trade_Balance_%_Change' ordinal='6' />
+                  <column datatype='real' name='XLK_Change_%' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI 1 - Avg Trade Balance'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_trade_etf_data' name='federated.1dsyjvf17tygab199rbjn0vc6713' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dsyjvf17tygab199rbjn0vc6713'>
+            <column caption='Trade Balance (Millions)' datatype='real' name='[Calculation_197032552111128576]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Trade_Balance] / 1000000' />
+            </column>
+            <column aggregation='Sum' caption='Trade Balance' datatype='real' name='[Trade_Balance]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_197032552111128576]' derivation='Sum' name='[sum:Calculation_197032552111128576:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' value='15' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='vertical-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='color' value='#000000' />
+            <format attr='text-format' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' value='n&quot;$&quot;#,##0.00;-&quot;$&quot;#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='14' />
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='text-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' num-steps='2' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' />
+              <text column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.3513259887695312' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2AFE6B93-DE70-4C6E-85A5-E3FD314A57BE}' />
+    </worksheet>
+    <worksheet name='KPI 2: Total ETF % Growth Over 2024'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_trade_etf_data' name='federated.1dsyjvf17tygab199rbjn0vc6713' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dsyjvf17tygab199rbjn0vc6713'>
+            <column caption='ETF Growth Polarity' datatype='string' name='[Calculation_197032552124821506]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF SUM([XLK_Change_%]) &gt; 0 THEN &quot;Positive&quot;&#13;&#10;ELSE &quot;Negative&quot;&#13;&#10;END' />
+            </column>
+            <column caption='XLK Change %' datatype='real' name='[XLK_Change_%]' role='measure' type='quantitative' />
+            <column-instance column='[XLK_Change_%]' derivation='Sum' name='[sum:XLK_Change_%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_197032552124821506]' derivation='User' name='[usr:Calculation_197032552124821506:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:XLK_Change_%:qk]' value='n#,##0.00&quot; %&quot;;-#,##0.00&quot; %&quot;' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Semibold' />
+            <format attr='font-size' value='15' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-family' value='Tableau Medium' />
+            <format attr='color' value='#333333' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='Tableau Medium' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dsyjvf17tygab199rbjn0vc6713].[usr:Calculation_197032552124821506:nk]' />
+              <text column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:XLK_Change_%:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AC17C1AF-E0B9-462E-91A2-58F3534E80C7}' />
+    </worksheet>
+    <worksheet name='KPI 3 – Worst Trade Balance Month'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_trade_etf_data' name='federated.1dsyjvf17tygab199rbjn0vc6713' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dsyjvf17tygab199rbjn0vc6713'>
+            <column caption='Trade Balance in Millions' datatype='real' name='[Calculation_197032552138932228]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Trade_Balance] / 1000000' />
+            </column>
+            <column datatype='date' name='[Month]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Trade Balance' datatype='real' name='[Trade_Balance]' role='dimension' type='ordinal' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Trade_Balance]' derivation='None' name='[none:Trade_Balance:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_197032552138932228]' derivation='Sum' name='[sum:Calculation_197032552138932228:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Trade_Balance:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Trade_Balance])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Trade_Balance:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Trade_Balance:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='385' />
+            <format attr='font-family' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Month:qk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Month:qk]' value='15' />
+            <format attr='text-format' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Month:qk]' value='*mmmm, yyyy' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Trade_Balance:ok]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Trade_Balance:ok]' value='15' />
+            <format attr='text-format' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Trade_Balance:ok]' value='n#,##0&quot; M&quot;;-#,##0&quot; M&quot;' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.0' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]' num-steps='2' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#323232</color>
+                <color>#414141</color>
+                <color>#505050</color>
+                <color>#5f5f5f</color>
+                <color>#6e6e6e</color>
+                <color>#7d7d7d</color>
+                <color>#8d8d8d</color>
+                <color>#9c9c9c</color>
+                <color>#ababab</color>
+                <color>#bababa</color>
+                <color>#c9c9c9</color>
+                <color>#d9d9d9</color>
+                <color>#dbc7c7</color>
+                <color>#ddb5b5</color>
+                <color>#e0a2a2</color>
+                <color>#e29090</color>
+                <color>#e47c7c</color>
+                <color>#e76969</color>
+                <color>#e95454</color>
+                <color>#eb4040</color>
+                <color>#ee2b2b</color>
+                <color>#f01515</color>
+                <color>#f30000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]' />
+              <text column='[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Month:qk]' />
+              <text column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontname='Tableau Semibold' fontsize='15'><![CDATA[Worst Month: <[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Month:qk]>]]></run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontname='Tableau Semibold' fontsize='15'><![CDATA[Trade Balance: <[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]> M]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.2853591442108154' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CADF8D15-9E33-4096-A81C-00535A51D4C3}' />
+    </worksheet>
+    <worksheet name='KPI 4 – Months in Deficit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Semibold'>KPI 4 – Months in Deficit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_trade_etf_data' name='federated.1dsyjvf17tygab199rbjn0vc6713' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dsyjvf17tygab199rbjn0vc6713'>
+            <column caption='Deficit Month Flag' datatype='integer' name='[Calculation_197032552142487557]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Trade_Balance] &lt; 0 THEN 1 ELSE 0 END' />
+            </column>
+            <column aggregation='Sum' caption='Trade Balance' datatype='real' name='[Trade_Balance]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_197032552142487557]' derivation='Sum' name='[sum:Calculation_197032552142487557:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552142487557:qk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552142487557:qk]' value='15' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552142487557:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552142487557:qk]' />
+              <text column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552142487557:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>Months in Trade Deficit: &lt;</run>
+                <run fontalignment='0'>[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552142487557:qk]</run>
+                <run fontalignment='0'>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.88955801725387573' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E6966702-B03B-4C25-9C82-8518C80F2885}' />
+    </worksheet>
+    <worksheet name='KPI 5 - Total ETF % Growth Over 2024'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Semibold'>Total ETF % Growth Over 2024</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_trade_etf_data' name='federated.1dsyjvf17tygab199rbjn0vc6713' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dsyjvf17tygab199rbjn0vc6713'>
+            <column caption='Total ETF Growth % (Fixed)' datatype='real' name='[Calculation_197032552145215494]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(&#13;&#10;    { FIXED : MAX([XLK_Avg_Close]) } - { FIXED : MIN([XLK_Avg_Close]) }&#13;&#10;) / { FIXED : MIN([XLK_Avg_Close]) } * 100' />
+            </column>
+            <column caption='XLK Avg Close' datatype='real' name='[XLK_Avg_Close]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_197032552145215494]' derivation='Sum' name='[sum:Calculation_197032552145215494:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='20' />
+            <format attr='text-format' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552145215494:qk]' value='p0.00%' />
+            <format attr='font-family' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552145215494:qk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552145215494:qk]' value='15' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552145215494:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#daeddc</color>
+                <color>#c5eac7</color>
+                <color>#b0e6b3</color>
+                <color>#9be3a0</color>
+                <color>#87df8d</color>
+                <color>#74dc7b</color>
+                <color>#61d869</color>
+                <color>#4ed558</color>
+                <color>#3dd147</color>
+                <color>#2cce37</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552145215494:qk]' />
+              <text column='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552145215494:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CEB1D6EA-BA35-403B-A8E7-A3A25A8DE1A2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1000' maxwidth='1800' minheight='1000' minwidth='1200' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='11320' id='54' param='horz' type-v2='layout-flow' w='98750' x='625' y='800'>
+            <zone forceUpdate='true' h='11320' id='55' type-v2='text' w='98750' x='625' y='800'>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>project dashboard</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='24180' id='62' param='vert' type-v2='layout-flow' w='21944' x='77431' y='12120'>
+            <zone h='24180' id='85' is-fixed='true' type-v2='layout-basic' w='21944' x='77431' y='12120'>
+              <zone h='24180' id='93' is-fixed='true' type-v2='layout-basic' w='21944' x='77431' y='12120'>
+                <zone h='7580' id='86' param='vert' type-v2='layout-flow' w='21944' x='77431' y='12120'>
+                  <zone fixed-size='81' h='7580' id='80' is-fixed='true' name='KPI 2: Total ETF % Growth Over 2024' pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[usr:Calculation_197032552124821506:nk]' type-v2='color' w='21944' x='77431' y='12120'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='16600' id='94' param='vert' type-v2='layout-flow' w='21944' x='77431' y='19700'>
+                  <zone h='7300' id='84' name='KPI 3 – Worst Trade Balance Month' pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]' type-v2='color' w='21944' x='77431' y='19700'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='7300' id='88' name='KPI 1 - Avg Trade Balance' pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' type-v2='color' w='21944' x='77431' y='27000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='24180' id='81' is-fixed='true' type-v2='layout-basic' w='23672' x='23828' y='12120'>
+            <zone h='8880' id='65' param='vert' type-v2='layout-flow' w='23672' x='23828' y='12120'>
+              <zone forceUpdate='true' h='7600' id='70' type-v2='text' w='23672' x='23828' y='12120'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='15'> 2 - Total ETF % Growth Over 2024</run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='15300' id='82' param='vert' type-v2='layout-flow' w='23672' x='23828' y='21000'>
+              <zone fixed-size='73' h='8100' id='79' is-fixed='true' name='KPI 2: Total ETF % Growth Over 2024' w='23672' x='23828' y='21000'>
+                <layout-cache type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='16600' id='90' is-fixed='true' type-v2='layout-basic' w='29931' x='47500' y='19700'>
+            <zone h='16600' id='91' param='vert' type-v2='layout-flow' w='29931' x='47500' y='19700'>
+              <zone fixed-size='126' h='13400' id='83' is-fixed='true' name='KPI 3 – Worst Trade Balance Month' w='29931' x='47500' y='19700'>
+                <layout-cache type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='7580' id='67' type-v2='text' w='23203' x='625' y='12120'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='15'>Avg Trade Balance (ATP, 2024)</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='16600' id='87' name='KPI 1 - Avg Trade Balance' w='23203' x='625' y='19700'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='62900' id='89' param='horz' type-v2='layout-flow' w='21406' x='77969' y='36300'>
+            <zone h='62900' id='95' param='vert' type-v2='layout-flow' w='21406' x='77969' y='36300'>
+              <zone h='62900' id='96' param='vert' type-v2='layout-flow' w='21406' x='77969' y='36300' />
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='7580' id='92' type-v2='text' w='29931' x='47500' y='12120'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='15'>3 - Worst Monthly Trade Balance (2024)</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='62900' id='97' param='vert' type-v2='layout-flow' w='39922' x='625' y='36300' />
+          <zone h='62900' id='98' param='vert' type-v2='layout-flow' w='37422' x='40547' y='36300' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='102' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='101' param='vert' type-v2='layout-flow' w='98750' x='625' y='800'>
+                <zone forceUpdate='true' h='11320' id='55' type-v2='text' w='98750' x='625' y='800'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>project dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7580' id='67' type-v2='text' w='23203' x='625' y='12120'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='15'>Avg Trade Balance (ATP, 2024)</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7600' id='70' type-v2='text' w='23672' x='23828' y='12120'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='15'> 2 - Total ETF % Growth Over 2024</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7580' id='92' type-v2='text' w='29931' x='47500' y='12120'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='15'>3 - Worst Monthly Trade Balance (2024)</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='158' h='16600' id='87' is-fixed='true' name='KPI 1 - Avg Trade Balance' w='23203' x='625' y='19700'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7300' id='88' name='KPI 1 - Avg Trade Balance' pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' type-v2='color' w='21944' x='77431' y='27000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='126' h='13400' id='83' is-fixed='true' name='KPI 3 – Worst Trade Balance Month' w='29931' x='47500' y='19700'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7300' id='84' name='KPI 3 – Worst Trade Balance Month' pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]' type-v2='color' w='21944' x='77431' y='19700'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='73' h='8100' id='79' is-fixed='true' name='KPI 2: Total ETF % Growth Over 2024' w='23672' x='23828' y='21000'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='81' h='7580' id='80' name='KPI 2: Total ETF % Growth Over 2024' pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[usr:Calculation_197032552124821506:nk]' type-v2='color' w='21944' x='77431' y='12120'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A714F4EF-4D98-4645-8ABD-A53771F076DD}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='KPI 1 - Avg Trade Balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='156'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552111128576:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1171FEDD-8324-4B6F-96C5-234725EC1644}' />
+    </window>
+    <window class='worksheet' name='KPI 2: Total ETF % Growth Over 2024'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[usr:Calculation_197032552124821506:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dsyjvf17tygab199rbjn0vc6713].[usr:Calculation_197032552124821506:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B9A2B524-03B4-452F-A96D-82BD417C3D47}' />
+    </window>
+    <window class='worksheet' name='KPI 3 – Worst Trade Balance Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552138932228:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Trade_Balance:ok]</field>
+            <field>[federated.1dsyjvf17tygab199rbjn0vc6713].[none:Trade_Balance:qk]</field>
+            <field>[federated.1dsyjvf17tygab199rbjn0vc6713].[yr:Month:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{64F2F074-5D39-4157-94DF-55030432FC5C}' />
+    </window>
+    <window class='worksheet' name='KPI 4 – Months in Deficit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552142487557:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F86597B3-4141-48F3-9BA1-708DACC450B7}' />
+    </window>
+    <window class='worksheet' name='KPI 5 - Total ETF % Growth Over 2024'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dsyjvf17tygab199rbjn0vc6713].[sum:Calculation_197032552145215494:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{10E87638-DC0F-4394-9028-513CEBC87063}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='KPI 1 - Avg Trade Balance' />
+        <viewpoint name='KPI 2: Total ETF % Growth Over 2024'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.1dsyjvf17tygab199rbjn0vc6713].[usr:Calculation_197032552124821506:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='KPI 3 – Worst Trade Balance Month' />
+      </viewpoints>
+      <active id='55' />
+      <device-preview selected='Desktop' visible='true'>
+        <device name='Medium Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{88CE949B-7102-48DF-AF78-70B875F9E3B4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      YvFGHxhhrAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='38' name='KPI 1 - Avg Trade Balance' width='104'>
+      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
+    </thumbnail>
+    <thumbnail height='38' name='KPI 2: Total ETF % Growth Over 2024' width='124'>
+      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
+    </thumbnail>
+    <thumbnail height='72' name='KPI 3 – Worst Trade Balance Month' width='192'>
+      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
+      kdL8D1dtRuCpmRVqAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='38' name='KPI 4 – Months in Deficit' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='24' name='KPI 5 - Total ETF % Growth Over 2024' width='144'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
